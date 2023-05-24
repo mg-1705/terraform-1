@@ -114,3 +114,6 @@ resource "aws_cloudwatch_metric_alarm" "scale_down_alarm" {
   actions_enabled = true
   alarm_actions   = [aws_autoscaling_policy.scale_down.arn]
 }
+
+
+# file("${path.module}/e2esa-aws-ec2-autoscaling")
